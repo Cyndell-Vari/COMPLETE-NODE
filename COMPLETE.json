@@ -1,0 +1,88 @@
+[
+    {
+        "id": "0fde87ca350231a2",
+        "type": "tab",
+        "label": "Complete",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "c8b8ef79faab7dc1",
+        "type": "inject",
+        "z": "0fde87ca350231a2",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "hello",
+        "payloadType": "str",
+        "x": 230,
+        "y": 80,
+        "wires": [
+            [
+                "dc18a4dc9ad1fbed"
+            ]
+        ]
+    },
+    {
+        "id": "dc18a4dc9ad1fbed",
+        "type": "debug",
+        "z": "0fde87ca350231a2",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 460,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "cf203a48f8c9c90e",
+        "type": "complete",
+        "z": "0fde87ca350231a2",
+        "name": "",
+        "scope": [
+            "dc18a4dc9ad1fbed"
+        ],
+        "uncaught": false,
+        "x": 210,
+        "y": 140,
+        "wires": [
+            [
+                "d4780c75443d4079"
+            ]
+        ]
+    },
+    {
+        "id": "d4780c75443d4079",
+        "type": "debug",
+        "z": "0fde87ca350231a2",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 460,
+        "y": 140,
+        "wires": []
+    }
+]
